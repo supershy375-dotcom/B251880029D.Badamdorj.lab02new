@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <title>Лаборатори 02: Анхлан суралцагчийн Форм</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 20px;">
+
+    <!-- 1. Семантик Header -->
+    <header style="background-color: #333; color: white; padding: 15px; text-align: center;">
+        <h1>Лаборатори 02: Хэрэглэгчийн Бүртгэл</h1>
+    </header>
+
+    <br>
+
+    <!-- 1. Семантик Main -->
+    <main style="background-color: white; padding: 20px; border-radius: 8px; max-width: 500px; margin: 0 auto; border: 1px solid #ccc;">
+        <h2>Бүртгэлийн анкет бөглөх</h2>
+
+        <form action="#" method="POST">
+            
+            <!-- 1. Text input -->
+            <p>
+                <label for="fullname">Бүтэн нэр:</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Жишээ: Бадамдорж" required pattern="[A-Za-zА-Яа-яӨөҮү\s]{2,50}">
+            </p>
+
+            <!-- 2. Email input -->
+            <p>
+                <label for="email">Цахим хаяг:</label><br>
+                <input type="email" id="email" name="email" placeholder="name@example.com" required>
+            </p>
+
+            <!-- 3. Password input -->
+            <p>
+                <label for="password">Нууц үг:</label><br>
+                <input type="password" id="password" name="password" placeholder="••••••••" required pattern=".{8,}">
+            </p>
+
+            <!-- 4. Date input -->
+            <p>
+                <label for="dob">Төрсөн огноо:</label><br>
+                <input type="date" id="dob" name="dob" required>
+            </p>
+
+            <!-- 5. Select input -->
+            <p>
+                <label for="occupation">Мэргэжил:</label><br>
+                <select id="occupation" name="occupation" required>
+                    <option value="" disabled selected>Сонгоно уу...</option>
+                    <option value="student">Оюутан</option>
+                    <option value="developer">Программист</option>
+                    <option value="designer">Дизайнер</option>
+                </select>
+            </p>
+
+            <!-- 6. Radio input -->
+            <p>
+                <label>Хүйс:</label><br>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Эрэгтэй</label>
+                
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Эмэгтэй</label>
+            </p>
+
+            <!-- 7. Checkbox input -->
+            <p>
+                <label>Сонирхол:</label><br>
+                <input type="checkbox" id="web" name="interests" value="web">
+                <label for="web">Вэб хөгжүүлэлт</label><br>
+                
+                <input type="checkbox" id="design" name="interests" value="design">
+                <label for="design">UI/UX Дизайн</label>
+            </p>
+
+            <br>
+
+            <!-- Submit Button -->
+            <button type="submit" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                Илгээх
+            </button>
+
+        </form>
+    </main>
+
+    <br>
+
+    <!-- 1. Семантик Footer -->
+    <footer style="background-color: #333; color: white; padding: 10px; text-align: center;">
+        <p>&copy; 2026 Вэб Зохиомж - Лаб 02</p>
+    </footer>
+
+</body>
+</html>
